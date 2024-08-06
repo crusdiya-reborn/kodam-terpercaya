@@ -1,0 +1,192 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://cdn.pixabay.com/photo/2020/06/24/17/41/incantation-5337079_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 10px; /* Add padding to prevent content from touching the screen edges on mobile */
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: 100%; /* Ensure the main container takes full width */
+    margin-top: 10vh; /* Ensure the container has 10% distance from the top */
+    margin-bottom: 10vh; /* Ensure the container has 10% distance from the bottom (footer) */
+    overflow: auto; /* Enable scrolling if content exceeds the viewport height */
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Set the width to 80% of the viewport */
+    max-width: 600px; /* Set the maximum width for larger screens */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+.container input {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Adjust width to fit within the container */
+    max-width: 300px; /* Optional: Set a max width for the input field */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container input::placeholder {
+    text-align: center;
+}
+
+.container button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Ensure the button takes full width on mobile */
+    max-width: 300px; /* Optional: Set a max width for the button */
+    box-sizing: border-box;
+}
+
+.container button:disabled {
+    background-color: #ccc;
+}
+
+.progress {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    display: none;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 18px;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    width: 100%; /* Ensure result does not exceed container width */
+    text-align: center; /* Ensure text is centered */
+    color: black;
+    font-weight:bold;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 18px;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    width: 100%; /* Ensure result does not exceed container width */
+    text-align: center; /* Ensure text is centered */
+    color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        padding: 20px; /* Reduce padding on smaller screens */
+        width: 80%; /* Ensure container takes up 80% of the screen width */
+    }
+
+    .container button {
+        padding: 10px; /* Adjust button padding for smaller screens */
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black; /* Set the background color to black */
+    width: 100%; 
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px 0; /* Add padding to footer */
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+}
+
+footer h3 {
+    margin: 5px 0;
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 10px; /* Change the font size */
+    font-weight: bold; /* Change the font weight */
+    color: white; /* Change the font color */
+}
+
+h1 {
+    margin: 5px 0;
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 35px; /* Change the font size */
+    font-weight: bold; /* Change the font weight */
+    color: white;   
+}
+
+h2 {
+    margin: 5px 0;
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 15px; /* Change the font size */
+    font-weight: bold; /* Change the font weight */
+    color: white;   
+}
+
+
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.pelengkap {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Set the width to 80% of the viewport */
+    max-width: 600px; /* Set the maximum width for larger screens */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+}
